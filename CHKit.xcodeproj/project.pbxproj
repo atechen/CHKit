@@ -18,6 +18,15 @@
 		E23BCC9B1C8FCD60000A58D6 /* NSTimer+AFSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E23BCC991C8FCD60000A58D6 /* NSTimer+AFSoundManager.m */; };
 		E23BCC9F1C8FCD9D000A58D6 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E23BCC9E1C8FCD9D000A58D6 /* CollectionViewController.m */; };
 		E23BCCA21C8FCF11000A58D6 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E23BCCA11C8FCF11000A58D6 /* CollectionViewCell.m */; };
+		E28ABA011C9119DC002737A2 /* MutiItemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E28ABA001C9119DC002737A2 /* MutiItemTableViewController.m */; };
+		E28ABA041C911F0F002737A2 /* MutiItemTabelViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E28ABA031C911F0F002737A2 /* MutiItemTabelViewCell.m */; };
+		E28ABA071C91234A002737A2 /* ItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E28ABA061C91234A002737A2 /* ItemCollectionViewCell.m */; };
+		E28ABA091C912422002737A2 /* atechen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E28ABA081C912422002737A2 /* atechen.jpg */; };
+		E28ABA0B1C912429002737A2 /* wuyanzu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E28ABA0A1C912429002737A2 /* wuyanzu.jpg */; };
+		E28ABA0D1C914F25002737A2 /* kitList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E28ABA0C1C914F25002737A2 /* kitList.plist */; };
+		E28ABA111C9164A0002737A2 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E28ABA101C9164A0002737A2 /* YYFPSLabel.m */; };
+		E28ABA141C91651C002737A2 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E28ABA131C91651C002737A2 /* YYWeakProxy.m */; };
+		E2991C201C929B8100B9953F /* DynamicCellHeightController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2991C1F1C929B8100B9953F /* DynamicCellHeightController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +52,21 @@
 		E23BCCA01C8FCF11000A58D6 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		E23BCCA11C8FCF11000A58D6 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		E23BCCA31C8FD5AA000A58D6 /* CHKitPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHKitPrefix.pch; sourceTree = "<group>"; };
+		E28AB9FF1C9119DC002737A2 /* MutiItemTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutiItemTableViewController.h; sourceTree = "<group>"; };
+		E28ABA001C9119DC002737A2 /* MutiItemTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutiItemTableViewController.m; sourceTree = "<group>"; };
+		E28ABA021C911F0F002737A2 /* MutiItemTabelViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutiItemTabelViewCell.h; sourceTree = "<group>"; };
+		E28ABA031C911F0F002737A2 /* MutiItemTabelViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutiItemTabelViewCell.m; sourceTree = "<group>"; };
+		E28ABA051C91234A002737A2 /* ItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCollectionViewCell.h; sourceTree = "<group>"; };
+		E28ABA061C91234A002737A2 /* ItemCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCollectionViewCell.m; sourceTree = "<group>"; };
+		E28ABA081C912422002737A2 /* atechen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atechen.jpg; sourceTree = "<group>"; };
+		E28ABA0A1C912429002737A2 /* wuyanzu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wuyanzu.jpg; sourceTree = "<group>"; };
+		E28ABA0C1C914F25002737A2 /* kitList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = kitList.plist; sourceTree = "<group>"; };
+		E28ABA0F1C9164A0002737A2 /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		E28ABA101C9164A0002737A2 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		E28ABA121C91651C002737A2 /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
+		E28ABA131C91651C002737A2 /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
+		E2991C1E1C929B8100B9953F /* DynamicCellHeightController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicCellHeightController.h; sourceTree = "<group>"; };
+		E2991C1F1C929B8100B9953F /* DynamicCellHeightController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicCellHeightController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +115,10 @@
 				E236F3A41C80394A00DC4F72 /* AppDelegate.m */,
 				E236F3A61C80394A00DC4F72 /* RootViewController.h */,
 				E236F3A71C80394A00DC4F72 /* RootViewController.m */,
+				E28ABA0C1C914F25002737A2 /* kitList.plist */,
 				E236F3A91C80394A00DC4F72 /* Main.storyboard */,
+				E28ABA0E1C916499002737A2 /* Vender */,
+				E28AB9FD1C911823002737A2 /* UITableView */,
 				E23BCC9C1C8FCD7A000A58D6 /* UICollection */,
 				E23BCC941C8FCD60000A58D6 /* NSTimer */,
 				E236F3AC1C80394A00DC4F72 /* Assets.xcassets */,
@@ -105,6 +132,7 @@
 		E236F3A01C80394A00DC4F72 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E28ABA081C912422002737A2 /* atechen.jpg */,
 				E236F3A11C80394A00DC4F72 /* main.m */,
 				E23BCCA31C8FD5AA000A58D6 /* CHKitPrefix.pch */,
 			);
@@ -139,6 +167,49 @@
 				E23BCCA11C8FCF11000A58D6 /* CollectionViewCell.m */,
 			);
 			path = UICollection;
+			sourceTree = "<group>";
+		};
+		E28AB9FD1C911823002737A2 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				E2991C1D1C929B2E00B9953F /* DynamicCellHeight */,
+				E28AB9FE1C911823002737A2 /* MultiItemOnCell */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		E28AB9FE1C911823002737A2 /* MultiItemOnCell */ = {
+			isa = PBXGroup;
+			children = (
+				E28AB9FF1C9119DC002737A2 /* MutiItemTableViewController.h */,
+				E28ABA001C9119DC002737A2 /* MutiItemTableViewController.m */,
+				E28ABA021C911F0F002737A2 /* MutiItemTabelViewCell.h */,
+				E28ABA031C911F0F002737A2 /* MutiItemTabelViewCell.m */,
+				E28ABA051C91234A002737A2 /* ItemCollectionViewCell.h */,
+				E28ABA061C91234A002737A2 /* ItemCollectionViewCell.m */,
+				E28ABA0A1C912429002737A2 /* wuyanzu.jpg */,
+			);
+			path = MultiItemOnCell;
+			sourceTree = "<group>";
+		};
+		E28ABA0E1C916499002737A2 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				E28ABA0F1C9164A0002737A2 /* YYFPSLabel.h */,
+				E28ABA101C9164A0002737A2 /* YYFPSLabel.m */,
+				E28ABA121C91651C002737A2 /* YYWeakProxy.h */,
+				E28ABA131C91651C002737A2 /* YYWeakProxy.m */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		E2991C1D1C929B2E00B9953F /* DynamicCellHeight */ = {
+			isa = PBXGroup;
+			children = (
+				E2991C1E1C929B8100B9953F /* DynamicCellHeightController.h */,
+				E2991C1F1C929B8100B9953F /* DynamicCellHeightController.m */,
+			);
+			path = DynamicCellHeight;
 			sourceTree = "<group>";
 		};
 		EF80F85E38BEF381FFE2F6BA /* Frameworks */ = {
@@ -210,7 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E236F3B01C80394A00DC4F72 /* LaunchScreen.storyboard in Resources */,
+				E28ABA0D1C914F25002737A2 /* kitList.plist in Resources */,
+				E28ABA0B1C912429002737A2 /* wuyanzu.jpg in Resources */,
 				E236F3AD1C80394A00DC4F72 /* Assets.xcassets in Resources */,
+				E28ABA091C912422002737A2 /* atechen.jpg in Resources */,
 				E236F3AB1C80394A00DC4F72 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,11 +344,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2991C201C929B8100B9953F /* DynamicCellHeightController.m in Sources */,
+				E28ABA041C911F0F002737A2 /* MutiItemTabelViewCell.m in Sources */,
 				E23BCC9A1C8FCD60000A58D6 /* HWWeakTimer.m in Sources */,
 				E236F3A81C80394A00DC4F72 /* RootViewController.m in Sources */,
+				E28ABA111C9164A0002737A2 /* YYFPSLabel.m in Sources */,
 				E23BCC9F1C8FCD9D000A58D6 /* CollectionViewController.m in Sources */,
 				E23BCC9B1C8FCD60000A58D6 /* NSTimer+AFSoundManager.m in Sources */,
+				E28ABA071C91234A002737A2 /* ItemCollectionViewCell.m in Sources */,
 				E236F3A51C80394A00DC4F72 /* AppDelegate.m in Sources */,
+				E28ABA141C91651C002737A2 /* YYWeakProxy.m in Sources */,
+				E28ABA011C9119DC002737A2 /* MutiItemTableViewController.m in Sources */,
 				E23BCCA21C8FCF11000A58D6 /* CollectionViewCell.m in Sources */,
 				E236F3A21C80394A00DC4F72 /* main.m in Sources */,
 			);
@@ -387,11 +467,14 @@
 			baseConfigurationReference = 6246A5C502CF7412A0D69DF4 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: jian zhou (F457QGMKNV)";
 				GCC_PREFIX_HEADER = CHKit/CHKitPrefix.pch;
 				INFOPLIST_FILE = CHKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.atechen.CHKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "aced70a4-19ea-4671-ab46-7bc49c2c9367";
 			};
 			name = Debug;
 		};
@@ -400,11 +483,14 @@
 			baseConfigurationReference = 17EF2C671BEA7110D0BEF4A7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: jian zhou (F457QGMKNV)";
 				GCC_PREFIX_HEADER = CHKit/CHKitPrefix.pch;
 				INFOPLIST_FILE = CHKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.atechen.CHKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "aced70a4-19ea-4671-ab46-7bc49c2c9367";
 			};
 			name = Release;
 		};
