@@ -17,28 +17,44 @@
 			</dict>
 		</array>
 	</dict>
-    <dict>
-        <key>sectionName</key>
-        <string>TableView</string>
-        <key>sectionArr</key>
-        <array>
+	<dict>
+		<key>sectionName</key>
+		<string>TableView</string>
+		<key>sectionArr</key>
+		<array>
+			<dict>
+				<key>flag</key>
+				<integer>0</integer>
+				<key>class</key>
+				<string>MutiItemTableViewController</string>
+				<key>title</key>
+				<string>MultiItemOnCell</string>
+			</dict>
+			<dict>
+				<key>flag</key>
+				<integer>0</integer>
+				<key>class</key>
+				<string>DynamicSelfSizeController</string>
+				<key>title</key>
+				<string>DynamicSelfSize</string>
+			</dict>
             <dict>
                 <key>flag</key>
                 <integer>0</integer>
                 <key>class</key>
-                <string>MutiItemTableViewController</string>
+                <string>CalculateInCellController</string>
                 <key>title</key>
-                <string>MultiItemOnCell</string>
+                <string>EstimatedAndCalculateInCell</string>
             </dict>
             <dict>
                 <key>flag</key>
                 <integer>0</integer>
                 <key>class</key>
-                <string>DynamicCellHeightController</string>
+                <string>TemplateCellController</string>
                 <key>title</key>
-                <string>DynamicCell</string>
+                <string>EstimatedAndTemplateCell</string>
             </dict>
-        </array>
-    </dict>
+		</array>
+	</dict>
 </array>
 </plist>

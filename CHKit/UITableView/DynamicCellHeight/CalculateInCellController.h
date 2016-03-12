@@ -1,5 +1,5 @@
 //
-//  DynamicCellHeightController.h
+//  CalculateInCellController.h
 //  CHKit
 //
 //  Created by 陈 斐 on 16/3/11.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DynamicCellHeightController : UITableViewController
+@interface CalculateInCellController : UITableViewController
 
 @end

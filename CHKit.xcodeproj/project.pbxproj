@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04190B7A1C943FC2002183D5 /* CalculateInCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04190B771C943FC2002183D5 /* CalculateInCellController.m */; };
+		04190B7B1C943FC2002183D5 /* TemplateCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04190B791C943FC2002183D5 /* TemplateCellController.m */; };
+		04190B7E1C94416F002183D5 /* CalculateHeightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04190B7D1C94416F002183D5 /* CalculateHeightCell.m */; };
+		04DCA0DD1C93ECF600130D09 /* DynamicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DCA0DC1C93ECF600130D09 /* DynamicModel.m */; };
+		04DCA0DF1C93ED0B00130D09 /* TestJSONData.json in Resources */ = {isa = PBXBuildFile; fileRef = 04DCA0DE1C93ED0B00130D09 /* TestJSONData.json */; };
+		04DCA0E21C93F2E000130D09 /* DynamicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DCA0E11C93F2E000130D09 /* DynamicTableViewCell.m */; };
+		04DCA1161C940B5000130D09 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DCA1151C940B5000130D09 /* LaunchScreen.xib */; };
 		31E1217DF05299EB26CBBC35 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFD6CC28AF68B3AEE740DC41 /* libPods.a */; };
 		E236F3A21C80394A00DC4F72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E236F3A11C80394A00DC4F72 /* main.m */; };
 		E236F3A51C80394A00DC4F72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E236F3A41C80394A00DC4F72 /* AppDelegate.m */; };
 		E236F3A81C80394A00DC4F72 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E236F3A71C80394A00DC4F72 /* RootViewController.m */; };
 		E236F3AB1C80394A00DC4F72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E236F3A91C80394A00DC4F72 /* Main.storyboard */; };
 		E236F3AD1C80394A00DC4F72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E236F3AC1C80394A00DC4F72 /* Assets.xcassets */; };
-		E236F3B01C80394A00DC4F72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E236F3AE1C80394A00DC4F72 /* LaunchScreen.storyboard */; };
 		E23BCC9A1C8FCD60000A58D6 /* HWWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = E23BCC971C8FCD60000A58D6 /* HWWeakTimer.m */; };
 		E23BCC9B1C8FCD60000A58D6 /* NSTimer+AFSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E23BCC991C8FCD60000A58D6 /* NSTimer+AFSoundManager.m */; };
 		E23BCC9F1C8FCD9D000A58D6 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E23BCC9E1C8FCD9D000A58D6 /* CollectionViewController.m */; };
@@ -26,10 +32,22 @@
 		E28ABA0D1C914F25002737A2 /* kitList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E28ABA0C1C914F25002737A2 /* kitList.plist */; };
 		E28ABA111C9164A0002737A2 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E28ABA101C9164A0002737A2 /* YYFPSLabel.m */; };
 		E28ABA141C91651C002737A2 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E28ABA131C91651C002737A2 /* YYWeakProxy.m */; };
-		E2991C201C929B8100B9953F /* DynamicCellHeightController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2991C1F1C929B8100B9953F /* DynamicCellHeightController.m */; };
+		E2991C201C929B8100B9953F /* DynamicSelfSizeController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2991C1F1C929B8100B9953F /* DynamicSelfSizeController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04190B761C943FC2002183D5 /* CalculateInCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalculateInCellController.h; path = ../../../../chkit/CHKit/UITableView/DynamicCellHeight/CalculateInCellController.h; sourceTree = "<group>"; };
+		04190B771C943FC2002183D5 /* CalculateInCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalculateInCellController.m; path = ../../../../chkit/CHKit/UITableView/DynamicCellHeight/CalculateInCellController.m; sourceTree = "<group>"; };
+		04190B781C943FC2002183D5 /* TemplateCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TemplateCellController.h; path = ../../../../chkit/CHKit/UITableView/DynamicCellHeight/TemplateCellController.h; sourceTree = "<group>"; };
+		04190B791C943FC2002183D5 /* TemplateCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TemplateCellController.m; path = ../../../../chkit/CHKit/UITableView/DynamicCellHeight/TemplateCellController.m; sourceTree = "<group>"; };
+		04190B7C1C94416F002183D5 /* CalculateHeightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateHeightCell.h; sourceTree = "<group>"; };
+		04190B7D1C94416F002183D5 /* CalculateHeightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculateHeightCell.m; sourceTree = "<group>"; };
+		04DCA0DB1C93ECF600130D09 /* DynamicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicModel.h; sourceTree = "<group>"; };
+		04DCA0DC1C93ECF600130D09 /* DynamicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicModel.m; sourceTree = "<group>"; };
+		04DCA0DE1C93ED0B00130D09 /* TestJSONData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestJSONData.json; sourceTree = "<group>"; };
+		04DCA0E01C93F2E000130D09 /* DynamicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicTableViewCell.h; sourceTree = "<group>"; };
+		04DCA0E11C93F2E000130D09 /* DynamicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicTableViewCell.m; sourceTree = "<group>"; };
+		04DCA1151C940B5000130D09 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		17EF2C671BEA7110D0BEF4A7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6246A5C502CF7412A0D69DF4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AFD6CC28AF68B3AEE740DC41 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,7 +59,6 @@
 		E236F3A71C80394A00DC4F72 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		E236F3AA1C80394A00DC4F72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E236F3AC1C80394A00DC4F72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E236F3AF1C80394A00DC4F72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E236F3B11C80394A00DC4F72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E23BCC961C8FCD60000A58D6 /* HWWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWWeakTimer.h; sourceTree = "<group>"; };
 		E23BCC971C8FCD60000A58D6 /* HWWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWWeakTimer.m; sourceTree = "<group>"; };
@@ -65,8 +82,8 @@
 		E28ABA101C9164A0002737A2 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
 		E28ABA121C91651C002737A2 /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
 		E28ABA131C91651C002737A2 /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
-		E2991C1E1C929B8100B9953F /* DynamicCellHeightController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicCellHeightController.h; sourceTree = "<group>"; };
-		E2991C1F1C929B8100B9953F /* DynamicCellHeightController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicCellHeightController.m; sourceTree = "<group>"; };
+		E2991C1E1C929B8100B9953F /* DynamicSelfSizeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicSelfSizeController.h; sourceTree = "<group>"; };
+		E2991C1F1C929B8100B9953F /* DynamicSelfSizeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicSelfSizeController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +139,8 @@
 				E23BCC9C1C8FCD7A000A58D6 /* UICollection */,
 				E23BCC941C8FCD60000A58D6 /* NSTimer */,
 				E236F3AC1C80394A00DC4F72 /* Assets.xcassets */,
-				E236F3AE1C80394A00DC4F72 /* LaunchScreen.storyboard */,
 				E236F3B11C80394A00DC4F72 /* Info.plist */,
+				04DCA1151C940B5000130D09 /* LaunchScreen.xib */,
 				E236F3A01C80394A00DC4F72 /* Supporting Files */,
 			);
 			path = CHKit;
@@ -206,8 +223,19 @@
 		E2991C1D1C929B2E00B9953F /* DynamicCellHeight */ = {
 			isa = PBXGroup;
 			children = (
-				E2991C1E1C929B8100B9953F /* DynamicCellHeightController.h */,
-				E2991C1F1C929B8100B9953F /* DynamicCellHeightController.m */,
+				04190B761C943FC2002183D5 /* CalculateInCellController.h */,
+				04190B771C943FC2002183D5 /* CalculateInCellController.m */,
+				04190B781C943FC2002183D5 /* TemplateCellController.h */,
+				04190B791C943FC2002183D5 /* TemplateCellController.m */,
+				E2991C1E1C929B8100B9953F /* DynamicSelfSizeController.h */,
+				E2991C1F1C929B8100B9953F /* DynamicSelfSizeController.m */,
+				04DCA0DE1C93ED0B00130D09 /* TestJSONData.json */,
+				04DCA0DB1C93ECF600130D09 /* DynamicModel.h */,
+				04DCA0DC1C93ECF600130D09 /* DynamicModel.m */,
+				04DCA0E01C93F2E000130D09 /* DynamicTableViewCell.h */,
+				04DCA0E11C93F2E000130D09 /* DynamicTableViewCell.m */,
+				04190B7C1C94416F002183D5 /* CalculateHeightCell.h */,
+				04190B7D1C94416F002183D5 /* CalculateHeightCell.m */,
 			);
 			path = DynamicCellHeight;
 			sourceTree = "<group>";
@@ -280,12 +308,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E236F3B01C80394A00DC4F72 /* LaunchScreen.storyboard in Resources */,
 				E28ABA0D1C914F25002737A2 /* kitList.plist in Resources */,
 				E28ABA0B1C912429002737A2 /* wuyanzu.jpg in Resources */,
 				E236F3AD1C80394A00DC4F72 /* Assets.xcassets in Resources */,
+				04DCA1161C940B5000130D09 /* LaunchScreen.xib in Resources */,
 				E28ABA091C912422002737A2 /* atechen.jpg in Resources */,
 				E236F3AB1C80394A00DC4F72 /* Main.storyboard in Resources */,
+				04DCA0DF1C93ED0B00130D09 /* TestJSONData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,19 +373,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2991C201C929B8100B9953F /* DynamicCellHeightController.m in Sources */,
+				E2991C201C929B8100B9953F /* DynamicSelfSizeController.m in Sources */,
 				E28ABA041C911F0F002737A2 /* MutiItemTabelViewCell.m in Sources */,
 				E23BCC9A1C8FCD60000A58D6 /* HWWeakTimer.m in Sources */,
+				04DCA0E21C93F2E000130D09 /* DynamicTableViewCell.m in Sources */,
 				E236F3A81C80394A00DC4F72 /* RootViewController.m in Sources */,
 				E28ABA111C9164A0002737A2 /* YYFPSLabel.m in Sources */,
 				E23BCC9F1C8FCD9D000A58D6 /* CollectionViewController.m in Sources */,
 				E23BCC9B1C8FCD60000A58D6 /* NSTimer+AFSoundManager.m in Sources */,
 				E28ABA071C91234A002737A2 /* ItemCollectionViewCell.m in Sources */,
 				E236F3A51C80394A00DC4F72 /* AppDelegate.m in Sources */,
+				04DCA0DD1C93ECF600130D09 /* DynamicModel.m in Sources */,
+				04190B7B1C943FC2002183D5 /* TemplateCellController.m in Sources */,
 				E28ABA141C91651C002737A2 /* YYWeakProxy.m in Sources */,
+				04190B7E1C94416F002183D5 /* CalculateHeightCell.m in Sources */,
 				E28ABA011C9119DC002737A2 /* MutiItemTableViewController.m in Sources */,
 				E23BCCA21C8FCF11000A58D6 /* CollectionViewCell.m in Sources */,
 				E236F3A21C80394A00DC4F72 /* main.m in Sources */,
+				04190B7A1C943FC2002183D5 /* CalculateInCellController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,14 +403,6 @@
 				E236F3AA1C80394A00DC4F72 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E236F3AE1C80394A00DC4F72 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E236F3AF1C80394A00DC4F72 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

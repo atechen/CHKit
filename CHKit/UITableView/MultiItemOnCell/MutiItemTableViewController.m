@@ -54,6 +54,7 @@ static NSString *mutiItemTabelViewCellID = @"mutiItemTabelViewCellID";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
     MutiItemTabelViewCell *cell = [tableView dequeueReusableCellWithIdentifier:mutiItemTabelViewCellID forIndexPath:indexPath];
+    // 赋值并计算高度
     [_cellHeightDic setObject:@([cell setItemInfoArr:_dataInfoArr[indexPath.row]]) forKey:indexPath];
     return cell;
 }
