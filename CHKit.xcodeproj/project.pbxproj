@@ -223,19 +223,19 @@
 		E2991C1D1C929B2E00B9953F /* DynamicCellHeight */ = {
 			isa = PBXGroup;
 			children = (
+				E2991C1E1C929B8100B9953F /* DynamicSelfSizeController.h */,
+				E2991C1F1C929B8100B9953F /* DynamicSelfSizeController.m */,
 				04190B761C943FC2002183D5 /* CalculateInCellController.h */,
 				04190B771C943FC2002183D5 /* CalculateInCellController.m */,
 				04190B781C943FC2002183D5 /* TemplateCellController.h */,
 				04190B791C943FC2002183D5 /* TemplateCellController.m */,
-				E2991C1E1C929B8100B9953F /* DynamicSelfSizeController.h */,
-				E2991C1F1C929B8100B9953F /* DynamicSelfSizeController.m */,
-				04DCA0DE1C93ED0B00130D09 /* TestJSONData.json */,
-				04DCA0DB1C93ECF600130D09 /* DynamicModel.h */,
-				04DCA0DC1C93ECF600130D09 /* DynamicModel.m */,
 				04DCA0E01C93F2E000130D09 /* DynamicTableViewCell.h */,
 				04DCA0E11C93F2E000130D09 /* DynamicTableViewCell.m */,
 				04190B7C1C94416F002183D5 /* CalculateHeightCell.h */,
 				04190B7D1C94416F002183D5 /* CalculateHeightCell.m */,
+				04DCA0DB1C93ECF600130D09 /* DynamicModel.h */,
+				04DCA0DC1C93ECF600130D09 /* DynamicModel.m */,
+				04DCA0DE1C93ED0B00130D09 /* TestJSONData.json */,
 			);
 			path = DynamicCellHeight;
 			sourceTree = "<group>";

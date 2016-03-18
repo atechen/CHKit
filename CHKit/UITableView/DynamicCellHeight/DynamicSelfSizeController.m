@@ -21,13 +21,18 @@ static NSString *dynamicCellID = @"dynamicCellID";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    YYFPSLabel *fpsLabel = [[YYFPSLabel alloc] initWithFrame:CGRectMake(10, 10, 50, 30)];
+    self.navigationItem.titleView = fpsLabel;
+    
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"TestJSONData" ofType:@"json"];
     NSData* data = [NSData dataWithContentsOfFile:filePath];
     NSDictionary *testDict = [NSJSONSerialization JSONObjectWithData:data
                                                 options:kNilOptions error:nil];
-    _dataArr = [DynamicModel mj_keyValuesArrayWithObjectArray:testDict[@"results"]];
+    _dataArr = [DynamicModel mj_objectArrayWithKeyValuesArray:testDict[@"reply"]];
     
     self.tableView.estimatedRowHeight = 44;
+    self.tableView.separatorColor = [UIColor redColor];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     
     [self.tableView registerClass:[DynamicTableViewCell class] forCellReuseIdentifier:dynamicCellID];
     

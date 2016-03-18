@@ -10,9 +10,10 @@
 
 @implementation CalculateHeightCell
 
-//- (CGFloat) calculateHeightWithInfo:(DynamicModel *)dynamicModel
-//{
-//    self.dynamicModel = dynamicModel;
-//}
+- (CGFloat) calculateHeightWithInfo:(DynamicModel *)dynamicModel
+{
+    return CGRectGetMaxY(_contentLabel.frame) + 10;
+    return self.frame.size.height;
+}
 
 @end

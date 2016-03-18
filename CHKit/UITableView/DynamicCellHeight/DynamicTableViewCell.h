@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "DynamicModel.h"
 @interface DynamicTableViewCell : UITableViewCell
+{
+    UILabel *_nameLabel;
+    UIImageView *_headerImage;
+    UILabel *_contentLabel;
+}
 @property (nonatomic, strong) DynamicModel *dynamicModel;
 @end

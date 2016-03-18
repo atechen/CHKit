@@ -21,6 +21,7 @@
 @interface CalculateInCellController ()
 {
     NSArray *_dataArr;
+    NSMutableDictionary *_cellHeightDic;
 }
 @end
 
@@ -33,11 +34,12 @@ static NSString *calculteCellID = @"dynamicAndCalculateInCellID";
     NSData* data = [NSData dataWithContentsOfFile:filePath];
     NSDictionary *testDict = [NSJSONSerialization JSONObjectWithData:data
                                                 options:kNilOptions error:nil];
-    _dataArr = [DynamicModel mj_keyValuesArrayWithObjectArray:testDict[@"results"]];
+    _dataArr = [DynamicModel mj_objectArrayWithKeyValuesArray:testDict[@"reply"]];
     
     self.tableView.estimatedRowHeight = 44;
-    
     [self.tableView registerClass:[CalculateHeightCell class] forCellReuseIdentifier:calculteCellID];
+    
+    _cellHeightDic = [NSMutableDictionary dictionary];
     
 }
 
@@ -54,18 +56,24 @@ static NSString *calculteCellID = @"dynamicAndCalculateInCellID";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     CalculateHeightCell *cell = [tableView dequeueReusableCellWithIdentifier:calculteCellID forIndexPath:indexPath];
     cell.dynamicModel = _dataArr[indexPath.row];
-    [cell calculateHeightWithInfo:_dataArr[indexPath.row]];
+    
+    if (!_cellHeightDic[indexPath]) {
+        CGFloat cellHeight = [cell calculateHeightWithInfo:_dataArr[indexPath.row]];
+        [_cellHeightDic setObject:@(cellHeight) forKey:indexPath];
+    }
+    
     return cell;
 }
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    NSLog(@"heightForRowAtIndexPath----%ld", (long)indexPath.row);
-//    return 80;
-//}
-//
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"heightForRowAtIndexPath----%ld", (long)indexPath.row);
+    return [_cellHeightDic[indexPath] floatValue];
+}
+
 //- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
 //{
 //    NSLog(@"estimatedHeightForRowAtIndexPath----%ld", (long)indexPath.row);

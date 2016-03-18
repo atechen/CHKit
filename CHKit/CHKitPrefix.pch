@@ -14,5 +14,7 @@
 
 #import "Masonry.h"
 #import "MJExtension.h"
+#import "UIImageView+WebCache.h"
+#import "YYFPSLabel.h"
 
 #endif /* CHKitPrefix_pch */

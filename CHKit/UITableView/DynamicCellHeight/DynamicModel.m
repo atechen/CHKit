@@ -9,5 +9,15 @@
 #import "DynamicModel.h"
 
 @implementation DynamicModel
++ (NSDictionary *)mj_objectClassInArray
+{
+    return @{@"rurl" : [ImageModel class]};
+}
+@end
+
+
+@implementation ImageModel
 
 @end
+
+

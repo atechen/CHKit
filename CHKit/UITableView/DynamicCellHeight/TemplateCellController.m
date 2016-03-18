@@ -34,13 +34,12 @@ static NSString *dynamicCellID = @"dynamicWithTemplateCellID";
     NSData* data = [NSData dataWithContentsOfFile:filePath];
     NSDictionary *testDict = [NSJSONSerialization JSONObjectWithData:data
                                                 options:kNilOptions error:nil];
-    _dataArr = [DynamicModel mj_keyValuesArrayWithObjectArray:testDict[@"results"]];
+    _dataArr = [DynamicModel mj_objectArrayWithKeyValuesArray:testDict[@"reply"]];
     
     _templateCell = [[DynamicTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:dynamicCellID];
     _cellHeightDic = [NSMutableDictionary dictionary];
     
     self.tableView.estimatedRowHeight = 44;
-//    self.tableView.estimatedRowHeight = UITableViewAutomaticDimension;
     [self.tableView registerClass:[DynamicTableViewCell class] forCellReuseIdentifier:dynamicCellID];
     
 }
@@ -52,24 +51,24 @@ static NSString *dynamicCellID = @"dynamicWithTemplateCellID";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"cellForRowAtIndexPath --- %ld", (long)indexPath.row);
     DynamicTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:dynamicCellID forIndexPath:indexPath];
-    NSLog(@"cellForRowAtIndexPath----%ld", (long)indexPath.row);
     cell.dynamicModel = _dataArr[indexPath.row];
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"heightForRowAtIndexPath ++++ %ld", (long)indexPath.row);
     id cellHeightValue = _cellHeightDic[indexPath];
     if (cellHeightValue) {
         return [_cellHeightDic[indexPath] floatValue];
     }
+    
     _templateCell.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(tableView.bounds), CGRectGetHeight(_templateCell.bounds));
     _templateCell.dynamicModel = _dataArr[indexPath.row];
     CGFloat cellHeight = [_templateCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height + 1;
     [_cellHeightDic setObject:@(cellHeight) forKey:indexPath];
-
+    NSLog(@"heightForRowAtIndexPath ++++ %ld", (long)indexPath.row);
     return cellHeight;
 }
 

@@ -8,10 +8,27 @@
 
 #import <Foundation/Foundation.h>
 
+@class DynamicModel,ImageModel;
+
 @interface DynamicModel : NSObject
-@property (nonatomic, copy) NSString *categoryId;
-@property (nonatomic, copy) NSString *circleType;
-@property (nonatomic, copy) NSString *commentNum;
-@property (nonatomic, copy) NSString *comments;
-@property (nonatomic, copy) NSString *content;
+
+@property (nonatomic, copy) NSString *hname;
+
+@property (nonatomic, copy) NSString *himgurl;
+
+@property (nonatomic, copy) NSString *rcont;
+
+@property (nonatomic, strong) NSArray<ImageModel *> *rurl;
+
 @end
+
+@interface ImageModel : NSObject
+
+@property (nonatomic, copy) NSString *url;
+
+@property (nonatomic, assign) NSInteger width;
+
+@property (nonatomic, assign) NSInteger height;
+
+@end
+

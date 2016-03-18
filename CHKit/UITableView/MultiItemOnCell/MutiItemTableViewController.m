@@ -8,7 +8,6 @@
 
 #import "MutiItemTableViewController.h"
 #import "MutiItemTabelViewCell.h"
-#import "YYFPSLabel.h"
 
 @interface MutiItemTableViewController ()
 {
