@@ -6,17 +6,17 @@
 //  Copyright (c) 2016年 atechen. All rights reserved.
 //
 
-#import "DynamicTableViewCell.h"
+#import "AutoLayoutTableViewCell.h"
 
-@interface DynamicTableViewCell ()
-//{
-//    UILabel *_nameLabel;
-//    UIImageView *_headerImage;
-//    UILabel *_contentLabel;
-//}
+@interface AutoLayoutTableViewCell ()
+{
+    UILabel *_nameLabel;
+    UIImageView *_headerImage;
+    UILabel *_contentLabel;
+}
 @end
 
-@implementation DynamicTableViewCell
+@implementation AutoLayoutTableViewCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -65,11 +65,7 @@
     _dynamicModel = dynamicModel;
     _nameLabel.text = dynamicModel.hname;
     _contentLabel.text= dynamicModel.rcont;
-    [_headerImage sd_setImageWithURL:[NSURL URLWithString:dynamicModel.himgurl] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-//        [_headerImage mas_updateConstraints:^(MASConstraintMaker *make) {
-//            make.height.equalTo(@(image.size.height));
-//        }];
-    }];
+    [_headerImage sd_setImageWithURL:[NSURL URLWithString:dynamicModel.himgurl]];
 }
 
 @end

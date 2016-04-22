@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "FullScreenBackNavigation.h"
+#import "CHKitListViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    CHKitListViewController *kitListController = [[CHKitListViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    FullScreenBackNavigation *rootViewController = [[FullScreenBackNavigation alloc] initWithRootViewController:kitListController];
+    self.window.rootViewController = rootViewController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

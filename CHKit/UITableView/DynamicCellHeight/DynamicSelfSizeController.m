@@ -7,7 +7,7 @@
 //
 
 #import "DynamicSelfSizeController.h"
-#import "DynamicTableViewCell.h"
+#import "AutoLayoutTableViewCell.h"
 #import "DynamicModel.h"
 
 @interface DynamicSelfSizeController ()
@@ -34,14 +34,9 @@ static NSString *dynamicCellID = @"dynamicCellID";
     self.tableView.separatorColor = [UIColor redColor];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     
-    [self.tableView registerClass:[DynamicTableViewCell class] forCellReuseIdentifier:dynamicCellID];
+    [self.tableView registerClass:[AutoLayoutTableViewCell class] forCellReuseIdentifier:dynamicCellID];
     
 }
-
-//- (void)viewDidLayoutSubviews
-//{
-//    [super viewDidLayoutSubviews];
-//}
 
 #pragma mark - Table view data source
 
@@ -51,7 +46,7 @@ static NSString *dynamicCellID = @"dynamicCellID";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    DynamicTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:dynamicCellID forIndexPath:indexPath];
+    AutoLayoutTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:dynamicCellID forIndexPath:indexPath];
     cell.dynamicModel = _dataArr[indexPath.row];
     return cell;
 }

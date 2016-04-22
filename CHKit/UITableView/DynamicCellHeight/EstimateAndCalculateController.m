@@ -14,21 +14,23 @@
 	在cell对象中将赋值和计算高度分开，在cellForRowAtIndexPath中判断高度是否缓存，缓存的话只赋值不计算高度，在heightForRowAtIndexPath中获取cell直接更新约束（或layouSubView）
  */
 
-#import "CalculateInCellController.h"
-#import "CalculateHeightCell.h"
+#import "EstimateAndCalculateController.h"
+#import "FrameResizeTableViewCell.h"
 #import "DynamicModel.h"
 
-@interface CalculateInCellController ()
+@interface EstimateAndCalculateController ()
 {
     NSArray *_dataArr;
     NSMutableDictionary *_cellHeightDic;
 }
 @end
 
-@implementation CalculateInCellController
+@implementation EstimateAndCalculateController
 static NSString *calculteCellID = @"dynamicAndCalculateInCellID";
 - (void)viewDidLoad {
     [super viewDidLoad];
+    YYFPSLabel *fpsLabel = [[YYFPSLabel alloc] initWithFrame:CGRectMake(10, 10, 50, 30)];
+    self.navigationItem.titleView = fpsLabel;
     
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"TestJSONData" ofType:@"json"];
     NSData* data = [NSData dataWithContentsOfFile:filePath];
@@ -37,19 +39,13 @@ static NSString *calculteCellID = @"dynamicAndCalculateInCellID";
     _dataArr = [DynamicModel mj_objectArrayWithKeyValuesArray:testDict[@"reply"]];
     
     self.tableView.estimatedRowHeight = 44;
-    [self.tableView registerClass:[CalculateHeightCell class] forCellReuseIdentifier:calculteCellID];
+    [self.tableView registerClass:[FrameResizeTableViewCell class] forCellReuseIdentifier:calculteCellID];
     
     _cellHeightDic = [NSMutableDictionary dictionary];
     
 }
 
-//- (void)viewDidLayoutSubviews
-//{
-//    [super viewDidLayoutSubviews];
-//}
-
 #pragma mark - Table view data source
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     return _dataArr.count;
@@ -57,11 +53,9 @@ static NSString *calculteCellID = @"dynamicAndCalculateInCellID";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    CalculateHeightCell *cell = [tableView dequeueReusableCellWithIdentifier:calculteCellID forIndexPath:indexPath];
-    cell.dynamicModel = _dataArr[indexPath.row];
-    
+    FrameResizeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:calculteCellID forIndexPath:indexPath];
+    CGFloat cellHeight = [cell setDynamicModelAndCalculateheight:_dataArr[indexPath.row]];
     if (!_cellHeightDic[indexPath]) {
-        CGFloat cellHeight = [cell calculateHeightWithInfo:_dataArr[indexPath.row]];
         [_cellHeightDic setObject:@(cellHeight) forKey:indexPath];
     }
     
@@ -70,13 +64,7 @@ static NSString *calculteCellID = @"dynamicAndCalculateInCellID";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"heightForRowAtIndexPath----%ld", (long)indexPath.row);
     return [_cellHeightDic[indexPath] floatValue];
 }
 
-//- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    NSLog(@"estimatedHeightForRowAtIndexPath----%ld", (long)indexPath.row);
-//    return 44;
-//}
 @end

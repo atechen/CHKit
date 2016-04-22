@@ -6,16 +6,16 @@
 //  Copyright © 2016年 atechen. All rights reserved.
 //
 
-#import "RootViewController.h"
+#import "CHKitListViewController.h"
 #import "CollectionViewController.h"
 
-@interface RootViewController ()
+@interface CHKitListViewController ()
 {
     NSArray *_sectionArr;
 }
 @end
 
-@implementation RootViewController
+@implementation CHKitListViewController
 static NSString *rootTableViewCellID = @"rootTableViewCellID";
 - (void)viewDidLoad {
     [super viewDidLoad];

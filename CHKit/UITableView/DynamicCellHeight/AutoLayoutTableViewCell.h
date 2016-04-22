@@ -8,11 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "DynamicModel.h"
-@interface DynamicTableViewCell : UITableViewCell
-{
-    UILabel *_nameLabel;
-    UIImageView *_headerImage;
-    UILabel *_contentLabel;
-}
+@interface AutoLayoutTableViewCell : UITableViewCell
 @property (nonatomic, strong) DynamicModel *dynamicModel;
 @end

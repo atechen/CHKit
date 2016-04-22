@@ -4,6 +4,21 @@
 <array>
 	<dict>
 		<key>sectionName</key>
+		<string>ScrollView</string>
+		<key>sectionArr</key>
+		<array>
+			<dict>
+				<key>flag</key>
+				<integer>0</integer>
+				<key>class</key>
+				<string>ViewPageScrollController</string>
+				<key>title</key>
+				<string>ViewPager</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>sectionName</key>
 		<string>Collection</string>
 		<key>sectionArr</key>
 		<array>
@@ -38,22 +53,37 @@
 				<key>title</key>
 				<string>DynamicSelfSize</string>
 			</dict>
-            <dict>
-                <key>flag</key>
-                <integer>0</integer>
-                <key>class</key>
-                <string>CalculateInCellController</string>
-                <key>title</key>
-                <string>EstimatedAndCalculateInCell</string>
-            </dict>
-            <dict>
-                <key>flag</key>
-                <integer>0</integer>
-                <key>class</key>
-                <string>TemplateCellController</string>
-                <key>title</key>
-                <string>EstimatedAndTemplateCell</string>
-            </dict>
+			<dict>
+				<key>flag</key>
+				<integer>0</integer>
+				<key>class</key>
+				<string>EstimateAndCalculateController</string>
+				<key>title</key>
+				<string>EstimatedAndCalculateInCell</string>
+			</dict>
+			<dict>
+				<key>flag</key>
+				<integer>0</integer>
+				<key>class</key>
+				<string>TemplateCellController</string>
+				<key>title</key>
+				<string>EstimatedAndTemplateCell</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>sectionName</key>
+		<string>Navigation</string>
+		<key>sectionArr</key>
+		<array>
+			<dict>
+				<key>flag</key>
+				<integer>0</integer>
+				<key>class</key>
+				<string>FullScreenBackController</string>
+				<key>title</key>
+				<string>全屏返回</string>
+			</dict>
 		</array>
 	</dict>
 </array>

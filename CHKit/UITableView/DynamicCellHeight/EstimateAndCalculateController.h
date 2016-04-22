@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CalculateInCellController : UITableViewController
+@interface EstimateAndCalculateController : UITableViewController
 
 @end

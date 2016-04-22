@@ -7,7 +7,7 @@
 //
 
 #import "TemplateCellController.h"
-#import "DynamicTableViewCell.h"
+#import "AutoLayoutTableViewCell.h"
 #import "DynamicModel.h"
 
 /*
@@ -20,7 +20,7 @@
 @interface TemplateCellController ()
 {
     NSArray *_dataArr;
-    DynamicTableViewCell *_templateCell;
+    AutoLayoutTableViewCell *_templateCell;
     NSMutableDictionary *_cellHeightDic;
 }
 @end
@@ -29,6 +29,8 @@
 static NSString *dynamicCellID = @"dynamicWithTemplateCellID";
 - (void)viewDidLoad {
     [super viewDidLoad];
+    YYFPSLabel *fpsLabel = [[YYFPSLabel alloc] initWithFrame:CGRectMake(10, 10, 50, 30)];
+    self.navigationItem.titleView = fpsLabel;
     
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"TestJSONData" ofType:@"json"];
     NSData* data = [NSData dataWithContentsOfFile:filePath];
@@ -36,12 +38,11 @@ static NSString *dynamicCellID = @"dynamicWithTemplateCellID";
                                                 options:kNilOptions error:nil];
     _dataArr = [DynamicModel mj_objectArrayWithKeyValuesArray:testDict[@"reply"]];
     
-    _templateCell = [[DynamicTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:dynamicCellID];
+    _templateCell = [[AutoLayoutTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:dynamicCellID];
     _cellHeightDic = [NSMutableDictionary dictionary];
     
     self.tableView.estimatedRowHeight = 44;
-    [self.tableView registerClass:[DynamicTableViewCell class] forCellReuseIdentifier:dynamicCellID];
-    
+    [self.tableView registerClass:[AutoLayoutTableViewCell class] forCellReuseIdentifier:dynamicCellID];
 }
 
 #pragma mark - Table view data source
@@ -51,30 +52,25 @@ static NSString *dynamicCellID = @"dynamicWithTemplateCellID";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"cellForRowAtIndexPath --- %ld", (long)indexPath.row);
-    DynamicTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:dynamicCellID forIndexPath:indexPath];
+//    NSLog(@"cellForRowAtIndexPath --- %ld", (long)indexPath.row);
+    AutoLayoutTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:dynamicCellID forIndexPath:indexPath];
     cell.dynamicModel = _dataArr[indexPath.row];
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    //1. 保证一行只计算一次
     id cellHeightValue = _cellHeightDic[indexPath];
     if (cellHeightValue) {
         return [_cellHeightDic[indexPath] floatValue];
     }
-    
+    //2. 使用模板cell计算行高
     _templateCell.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(tableView.bounds), CGRectGetHeight(_templateCell.bounds));
     _templateCell.dynamicModel = _dataArr[indexPath.row];
     CGFloat cellHeight = [_templateCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height + 1;
     [_cellHeightDic setObject:@(cellHeight) forKey:indexPath];
-    NSLog(@"heightForRowAtIndexPath ++++ %ld", (long)indexPath.row);
+//    NSLog(@"heightForRowAtIndexPath ++++ %ld", (long)indexPath.row);
     return cellHeight;
 }
-
-//- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    NSLog(@"estimatedHeightForRowAtIndexPath----%ld", (long)indexPath.row);
-//    return 44;
-//}
 @end
